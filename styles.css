@@ -1,0 +1,90 @@
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #0c0c0c;
+}
+
+/* chart */
+#chart {
+  width: 80vw;
+  max-width: 950px;
+  color: #222;
+  background: #eee;
+  margin: 20px auto 20px;
+  box-shadow: 20px 15px 45px 25px rgba(8, 84, 175, 0.7);
+  border: 0.25em solid #08a7af;
+  overflow: auto;
+}
+
+#data {
+  height: 580px;
+}
+
+#title {
+  margin-top: 5px;
+}
+
+#title,
+#source_name {
+  text-align: center;
+}
+
+svg {
+  display: block;
+  margin: auto;
+}
+
+#source-title {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+#source-title, 
+.axis-label {
+  fill: #222;
+}
+
+.axis-label {
+  font-weight: bold;
+}
+
+.bar {
+  fill: #08a8af;
+}
+
+.bar:hover {
+  fill: #af0f08;
+}
+
+#x-axis,
+#y-axis {
+  stroke: #222;
+  stroke-width: 1;
+  fill: none;
+}
+
+#tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  color: #ccc;
+  width: 150px;
+  height: 50px;
+  padding: 2px;
+  background: #08af63;
+  box-shadow: 1px 5px 10px #0855af;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+#info {
+  font-size: 0.8em;
+  text-decoration: underline;
+}
